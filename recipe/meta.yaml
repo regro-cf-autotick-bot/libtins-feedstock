@@ -1,5 +1,5 @@
 {% set name = "libtins" %}
-{% set version = "4.3" %}
+{% set version = "4.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/mfontanini/{{ name|lower }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: c70bce5a41a27258bf0e3ad535d8238fb747d909a4b87ea14620f25dd65828fd
+  sha256: ff0121b4ec070407e29720c801b7e1a972042300d37560a62c57abadc9635634
 
 build:
-  number: 1
+  number: 0
   run_exports:
     - {{ pin_subpackage('libtins', max_pin='x') }}
 
